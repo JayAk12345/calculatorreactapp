@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <h1>Calculator</h1>
       <Display display={display} />
-      <Operations />
+      <Operations display={display} setDisplay={setDisplay} />
       <Numbers display={display} setDisplay={setDisplay} />
     </div>
   );

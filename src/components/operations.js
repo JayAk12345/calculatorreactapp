@@ -1,13 +1,23 @@
-const Operations = () => {
+import AddToDisplay from "./addToDisplay";
+
+const Operations = ({ display, setDisplay }) => {
   return (
     <div>
       <table>
         <tr>
           <td>AC</td>
-          <td>X</td>
-          <td>/</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <AddToDisplay display={display} setDisplay={setDisplay} num={"X"} />
+          </td>
+          <td>
+            <AddToDisplay display={display} setDisplay={setDisplay} num={"/"} />
+          </td>
+          <td>
+            <AddToDisplay display={display} setDisplay={setDisplay} num={"+"} />
+          </td>
+          <td>
+            <AddToDisplay display={display} setDisplay={setDisplay} num={"-"} />
+          </td>
         </tr>
       </table>
     </div>
