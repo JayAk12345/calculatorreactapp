@@ -1,4 +1,6 @@
 import AddToDisplay from "./addToDisplay";
+import Calculate from "./Calculate";
+
 const Numbers = ({ display, setDisplay }) => {
   return (
     <div id="numbersTable">
@@ -43,7 +45,9 @@ const Numbers = ({ display, setDisplay }) => {
           <td>
             <AddToDisplay display={display} setDisplay={setDisplay} num={"."} />
           </td>
-          <td>=</td>
+          <td>
+            <Calculate display={display} setDisplay={setDisplay} />
+          </td>
         </tr>
       </table>
     </div>

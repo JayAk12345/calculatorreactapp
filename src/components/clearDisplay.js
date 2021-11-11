@@ -1,5 +1,11 @@
-const clearDisplay = ({ display, setDisplay }) => {
-  setDisplay([]);
+const ClearDisplay = ({ display, setDisplay }) => {
+  return (
+    <div>
+      <button onClick={() => {
+        setDisplay([])
+      }
+      }>AC</button></div>
+  )
 };
 
-export default
+export default ClearDisplay;
