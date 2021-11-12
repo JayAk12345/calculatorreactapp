@@ -5,6 +5,16 @@
 body {
   text-align: center;
 }
+.lowerSection {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 32.65%;
+  margin-right: auto;
+}
+#memoryTable {
+  width: 100px;
+}
 table {
   text-align: center;
   border: solid black;
@@ -13,7 +23,7 @@ table {
   margin-right: auto;
 }
 td {
-  border: solid black;
+  border: solid blue;
   width: 100px;
   height: 100px;
 }
