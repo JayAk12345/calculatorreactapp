@@ -54,5 +54,8 @@ const calc = ([parsedFirstNum, ops, parsedSecondNum]) => {
   if (ops === "^") {
     answer += Math.pow(parsedFirstNum, parsedSecondNum);
   }
+  if (ops === "%") {
+    answer += (parsedFirstNum * parsedSecondNum) / 100;
+  }
   return answer;
 };
