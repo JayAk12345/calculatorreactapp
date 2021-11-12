@@ -51,5 +51,8 @@ const calc = ([parsedFirstNum, ops, parsedSecondNum]) => {
   if (ops === "X") {
     answer += parsedFirstNum * parsedSecondNum;
   }
+  if (ops === "^") {
+    answer += Math.pow(parsedFirstNum, parsedSecondNum);
+  }
   return answer;
 };

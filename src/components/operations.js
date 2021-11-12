@@ -21,6 +21,9 @@ const Operations = ({ display, setDisplay }) => {
           <td>
             <AddToDisplay display={display} setDisplay={setDisplay} num={"-"} />
           </td>
+          <td>
+            <AddToDisplay display={display} setDisplay={setDisplay} num={"^"} />
+          </td>
         </tr>
       </table>
     </div>

@@ -24,6 +24,5 @@ function App() {
 export default App;
 
 //add functionality for multiple operations 5+5/6
-// add memory buttons
 // add additional operations
 // prevent use of operations incorrectly eg XX+
