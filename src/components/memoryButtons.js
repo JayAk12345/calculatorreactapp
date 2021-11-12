@@ -32,7 +32,7 @@ const MemoryButtons = ({ display, setDisplay }) => {
           <td>
             <AddToMemory
               display={display}
-              memoryBlock={"m1"}
+              memoryBlock={"m2"}
               memory={memory}
               setMemory={setMemory}
             />
@@ -47,14 +47,14 @@ const MemoryButtons = ({ display, setDisplay }) => {
           <td>
             <AddToMemory
               display={display}
-              memoryBlock={"m1"}
+              memoryBlock={"m3"}
               memory={memory}
               setMemory={setMemory}
             />
             <AddToDisplay
               display={display}
               setDisplay={setDisplay}
-              num={memory.m1}
+              num={memory.m3}
             />
           </td>
         </tr>
@@ -62,14 +62,14 @@ const MemoryButtons = ({ display, setDisplay }) => {
           <td>
             <AddToMemory
               display={display}
-              memoryBlock={"m1"}
+              memoryBlock={"m4"}
               memory={memory}
               setMemory={setMemory}
             />
             <AddToDisplay
               display={display}
               setDisplay={setDisplay}
-              num={memory.m1}
+              num={memory.m4}
             />
           </td>
         </tr>
