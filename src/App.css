@@ -9,7 +9,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: row;
-  margin-left: 32.65%;
+  margin-left: 36%;
   margin-right: auto;
 }
 #memoryTable {
@@ -25,7 +25,7 @@ td {
   width: 100px;
   height: 100px;
   background-color: rgb(216, 212, 195);
-  box-shadow:  0px 0px 20px hsl(0, 0%, 0%) inset;
+  box-shadow: 0px 0px 20px hsl(0, 0%, 0%) inset;
 }
 .display {
   font-size: large;
@@ -34,8 +34,8 @@ td {
   margin-right: auto;
   margin-top: auto;
   border: solid black;
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 30px;
 }
 
 button {
