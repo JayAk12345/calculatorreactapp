@@ -7,7 +7,6 @@ import MemoryButtons from "./components/memoryButtons.js";
 
 function App() {
   const [display, setDisplay] = useState([]);
-  const [m1, setM1] = useState([]);
   return (
     <div className="App">
       <h1>Calculator</h1>
@@ -15,7 +14,7 @@ function App() {
       <Operations display={display} setDisplay={setDisplay} />
 
       <div className="lowerSection">
-        <MemoryButtons display={display} />
+        <MemoryButtons display={display} setDisplay={setDisplay} />
         <Numbers display={display} setDisplay={setDisplay} />
       </div>
     </div>

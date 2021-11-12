@@ -1,17 +1,27 @@
-const AddToMemory = ({ display }) => {
-  let saved1;
+import { useState } from "react";
+
+const AddToMemory = ({ display, memoryBlock }) => {
+  let [memory, setMemory] = useState({
+    m1: [],
+    m2: [],
+    m3: [],
+    m4: []
+  })
+
   return (
     <div>
       <button
         onClick={() => {
-          setSaved((currentDisplay) => {
-            saved1 = currentDisplay;
-            return saved1;
-          });
+          setMemory((currMemory) => {
+            let memoryCopy = {...currMemory};
+            memoryCopy[memoryBlock] = display;
+            return memoryCopy;
+          })
         }}
       >
-        M1 {saved1}
+        {memoryBlock}:
       </button>
+      {memory[memoryBlock]}
     </div>
   );
 };
